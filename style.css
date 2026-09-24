@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+.page{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.pllp{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+}
+.block-left{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.block-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.cont{
+    display: flex;
+    align-items: center;
+}
+.cont h1{
+font-size: 50px;
+}
+.cont p{
+    font-size: 18px;
+    width: 400px;
+}
+h2{
+    font-size: 46px;
+}
+.cont2 p{
+    font-size: 18px;
+}
+.text-block{
+    display: flex;
+    align-items: center;
+}
+.text-right h3{
+font-size: 24px;
+}
+.text-right p{
+    font-size: 18px;
+}
+.cont3 h3{
+    text-align: center;
+    font-size: 46px;
+}
+.item{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px #ccc;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.box1{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.item div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item2{
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 3px 10px #ccc;
+    width: 100%
+}
+.item img, .item2 img{
+    width: 100px;
+    height: 100px;
+}
+.footer1, .footer1 p{
+    display: flex;
+    font-size: 15px;
+}
+.te{
+    width: 50%;
+}
+h5{
+    font-size: 24px;
+}
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.footer2 div{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+/* медия запрос - давать стиль для экрана телефона  */
+@media (max-width: 500px){
+    .pllp {
+        display: none;
+    }
+    .cont {
+        flex-direction: column-reverse;
+    }
+    .page {
+        width: 100%;
+    }
+    .cont2 div{
+        flex-direction: column;
+    }
+    .box1 {
+        flex-wrap: wrap;
+    }
+    .item {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .item2 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .te {
+        width: 100%;
+    }
+    .footer2 {
+       flex-direction: column;
+    }
+    .page {
+        width: 100%;
+        padding: 0 15px;
+    }
+    h1 h2 {
+        font-size: 28px;
+    }
+    .cont img{
+        width: 400px;
+    }
+
+}
