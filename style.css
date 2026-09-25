@@ -5,6 +5,7 @@
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 .pllp{
     display: flex;
